@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonderland - Submenu</title>
+    <link rel="stylesheet" href="./dist/style.min.css">
+</head>
+<body>
+
+  <div class="DtSubmenu">
+    <!-- ===================== -->
+    <!-- KHU VỰC: QUẬN / PHƯỜNG -->
+    <!-- ===================== -->
+    <div class="DtSubmenu-Address">
+      <div class="DtSubmenu-Title">
+        <a class="DtSubmenuTitle-Link DtSubmenuTitle-LinkSeparate DtToggleButton DtToggleButton-Active" data-target="District" href="javascript:void(0)">Tìm theo Quận</a>
+        <a class="DtSubmenuTitle-Link DtToggleButton" data-target="Ward" href="javascript:void(0)">Tìm theo Phường và Đường</a>
+      </div>
+
+      <!-- ToggleContent: Quận -->
+      <div class="DtToggleContent DtToggleContent-District DtToggleContent-Active">
+        <div class="DtSubmenuGrid DtSubmenuGrid-Three">
+          <a class="DtSubmenuLink" href="#">Quận 1</a>
+          <a class="DtSubmenuLink" href="#">Quận 3</a>
+          <a class="DtSubmenuLink" href="#">Quận 5</a>
+          <a class="DtSubmenuLink" href="#">Quận 7</a>
+          <a class="DtSubmenuLink" href="#">Tân Bình</a>
+          <a class="DtSubmenuLink" href="#">Bình Thạnh</a>
+        </div>
+      </div>
+
+      <!-- ToggleContent: Phường -->
+      <div class="DtToggleContent DtToggleContent-Ward">
+        <div class="DtToggleLayout">
+          <!-- Cột trái: menu quận -->
+          <div class="DtToggleMenu">
+            <div class="DtToggleMenu-Item DtToggleMenu-Active" data-target="DtWardDistrict-1">Quận 1</div>
+            <div class="DtToggleMenu-Item" data-target="DtWardDistrict-3">Quận 3</div>
+            <div class="DtToggleMenu-Item" data-target="DtWardDistrict-5">Quận 5</div>
+            <div class="DtToggleMenu-Item" data-target="DtWardDistrict-7">Quận 7</div>
+          </div>
+
+          <!-- Cột phải: nội dung -->
+          <div class="DtToggleContent-Right">
+            <!-- Quận 1 -->
+            <div class="DtToggleContent-Item DtToggleContent-ItemActive" id="DtWardDistrict-1">
+              <div class="DtToggleContent-Ward">
+                <h5 class="DtToggleContentList-Title">Danh sách phường</h5>
+                <div class="DtToggleContent-List DtToggleContentList-Ward">
+                  <a class="DtToggleContent-Link" href="#">Phường Bến Nghé</a>
+                  <a class="DtToggleContent-Link" href="#">Phường Bến Thành</a>
+                  <a class="DtToggleContent-Link" href="#">Phường Nguyễn Thái Bình</a>
+                </div>
+              </div>
+              <div class="DtToggleContent-Road">
+                <h5 class="DtToggleContentList-Title">Các tuyến đường nổi bật</h5>
+                <div class="DtToggleContent-List DtToggleContentList-Road">
+                  <a class="DtToggleContent-Link" href="#">Đồng Khởi</a>
+                  <a class="DtToggleContent-Link" href="#">Nguyễn Huệ</a>
+                  <a class="DtToggleContent-Link" href="#">Lê Lợi</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quận 3 -->
+            <div class="DtToggleContent-Item" id="DtWardDistrict-3">
+              <div class="DtToggleContent-Ward">
+                <h5 class="DtToggleContentList-Title">Danh sách phường</h5>
+                <div class="DtToggleContent-List DtToggleContentList-Ward">
+                  <a class="DtToggleContent-Link" href="#">Phường Võ Thị Sáu</a>
+                  <a class="DtToggleContent-Link" href="#">Phường 7</a>
+                  <a class="DtToggleContent-Link" href="#">Phường 9</a>
+                </div>
+              </div>
+              <div class="DtToggleContent-Road">
+                <h5 class="DtToggleContentList-Title">Các tuyến đường nổi bật</h5>
+                <div class="DtToggleContent-List DtToggleContentList-Road">
+                  <a class="DtToggleContent-Link" href="#">Nam Kỳ Khởi Nghĩa</a>
+                  <a class="DtToggleContent-Link" href="#">Cách Mạng Tháng 8</a>
+                  <a class="DtToggleContent-Link" href="#">Nguyễn Đình Chiểu</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quận 5 -->
+            <div class="DtToggleContent-Item" id="DtWardDistrict-5">
+              <div class="DtToggleContent-Ward">
+                <h5 class="DtToggleContentList-Title">Danh sách phường</h5>
+                <div class="DtToggleContent-List DtToggleContentList-Ward">
+                  <a class="DtToggleContent-Link" href="#">Phường 4</a>
+                  <a class="DtToggleContent-Link" href="#">Phường 8</a>
+                  <a class="DtToggleContent-Link" href="#">Phường 10</a>
+                </div>
+              </div>
+              <div class="DtToggleContent-Road">
+                <h5 class="DtToggleContentList-Title">Các tuyến đường nổi bật</h5>
+                <div class="DtToggleContent-List DtToggleContentList-Road">
+                  <a class="DtToggleContent-Link" href="#">Trần Hưng Đạo</a>
+                  <a class="DtToggleContent-Link" href="#">Nguyễn Trãi</a>
+                  <a class="DtToggleContent-Link" href="#">Hồng Bàng</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quận 7 -->
+            <div class="DtToggleContent-Item" id="DtWardDistrict-7">
+              <div class="DtToggleContent-Ward">
+                <h5 class="DtToggleContentList-Title">Danh sách phường</h5>
+                <div class="DtToggleContent-List DtToggleContentList-Ward">
+                  <a class="DtToggleContent-Link" href="#">Phường Tân Phong</a>
+                  <a class="DtToggleContent-Link" href="#">Phường Tân Phú</a>
+                  <a class="DtToggleContent-Link" href="#">Phường Phú Mỹ</a>
+                </div>
+              </div>
+              <div class="DtToggleContent-Road">
+                <h5 class="DtToggleContentList-Title">Các tuyến đường nổi bật</h5>
+                <div class="DtToggleContent-List DtToggleContentList-Road">
+                  <a class="DtToggleContent-Link" href="#">Nguyễn Văn Linh</a>
+                  <a class="DtToggleContent-Link" href="#">Nguyễn Lương Bằng</a>
+                  <a class="DtToggleContent-Link" href="#">Trần Văn Trà</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== -->
+    <!-- TÒA NHÀ NỔI BẬT -->
+    <!-- ===================== -->
+    <div class="DtSubmenu-Highlight">
+      <div class="DtSubmenu-Title">
+        <div class="DtSubmenuTitle-Link DtSubmenuTitle-LinkBold">Tòa nhà nổi bật</div>
+      </div>
+      <div class="DtSubmenuGrid">
+        <a href="#" class="DtSubmenuLink">Bitexco</a>
+        <a href="#" class="DtSubmenuLink">Saigon Centre</a>
+        <a href="#" class="DtSubmenuLink">Landmark 81</a>
+        <a href="#" class="DtSubmenuLink">Saigon One Tower</a>
+      </div>
+    </div>
+
+    <!-- ===================== -->
+    <!-- HẠNG -->
+    <!-- ===================== -->
+    <div class="DtSubmenu-Rank">
+      <div class="DtSubmenu-Title">
+        <div class="DtSubmenuTitle-Link DtSubmenuTitle-LinkBold">Tìm theo loại</div>
+      </div>
+      <div class="DtSubmenuGrid">
+        <a href="#" class="DtSubmenuLink">Hạng A</a>
+        <a href="#" class="DtSubmenuLink">Hạng B</a>
+        <a href="#" class="DtSubmenuLink">Hạng C</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="DtmSubmenu">
+    <!-- ===================== -->
+    <!-- KHU VỰC: QUẬN / PHƯỜNG -->
+    <!-- ===================== -->
+    <div class="DtmSubmenu-Address">
+      <div class="DtmSubmenu-Title">
+        <a class="DtmSubmenuTitle-Link DtmSubmenuTitle-LinkSeparate DtmToggleButton DtmToggleButton-Active" data-target="District" href="javascript:void(0)">Tìm theo Quận</a>
+        <a class="DtmSubmenuTitle-Link DtmToggleButton" data-target="Ward" href="javascript:void(0)">Tìm theo Phường và Đường</a>
+      </div>
+
+      <!-- ToggleContent: Quận -->
+      <div class="DtmToggleContent DtmToggleContent-District DtmToggleContent-Active">
+        <div class="DtmSubmenuGrid DtmSubmenuGrid-Three">
+          <a class="DtmSubmenuLink" href="#">Quận 1</a>
+          <a class="DtmSubmenuLink" href="#">Quận 3</a>
+          <a class="DtmSubmenuLink" href="#">Quận 5</a>
+          <a class="DtmSubmenuLink" href="#">Quận 7</a>
+          <a class="DtmSubmenuLink" href="#">Tân Bình</a>
+          <a class="DtmSubmenuLink" href="#">Bình Thạnh</a>
+        </div>
+      </div>
+
+      <!-- ToggleContent: Phường -->
+      <div class="DtmToggleContent DtmToggleContent-Ward">
+        <div class="DtmAccordion">
+          <!-- Quận 1 -->
+          <div class="DtmAccordion-Item">
+            <div class="DtmAccordion-Header" data-target="DtmWardDistrict-1">
+              Quận 1
+            </div>
+            <div class="DtmAccordion-Body" id="DtmWardDistrict-1">
+              <div class="DtmToggleContent-Ward">
+                <h5 class="DtmToggleContentList-Title">Danh sách phường</h5>
+                <div class="DtmToggleContent-List DtmToggleContentList-Ward">
+                  <a class="DtmToggleContent-Link" href="#">Phường Bến Nghé</a>
+                  <a class="DtmToggleContent-Link" href="#">Phường Bến Thành</a>
+                  <a class="DtmToggleContent-Link" href="#">Phường Nguyễn Thái Bình</a>
+                </div>
+              </div>
+              <div class="DtmToggleContent-Road">
+                <h5 class="DtmToggleContentList-Title">Các tuyến đường nổi bật</h5>
+                <div class="DtmToggleContent-List DtmToggleContentList-Road">
+                  <a class="DtmToggleContent-Link" href="#">Đồng Khởi</a>
+                  <a class="DtmToggleContent-Link" href="#">Nguyễn Huệ</a>
+                  <a class="DtmToggleContent-Link" href="#">Lê Lợi</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quận 3 -->
+          <div class="DtmAccordion-Item">
+            <div class="DtmAccordion-Header" data-target="DtmWardDistrict-3">Quận 3</div>
+            <div class="DtmAccordion-Body" id="DtmWardDistrict-3">
+              ... nội dung tương tự ...
+            </div>
+          </div>
+
+          <!-- Quận 5 -->
+          <div class="DtmAccordion-Item">
+            <div class="DtmAccordion-Header" data-target="DtmWardDistrict-5">Quận 5</div>
+            <div class="DtmAccordion-Body" id="DtmWardDistrict-5">
+              ... nội dung tương tự ...
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ===================== -->
+    <!-- TÒA NHÀ NỔI BẬT -->
+    <!-- ===================== -->
+    <div class="DtmSubmenu-Highlight">
+      <div class="DtmSubmenu-Title">
+        <div class="DtmSubmenuTitle-Link DtmSubmenuTitle-LinkBold">Tòa nhà nổi bật</div>
+      </div>
+      <div class="DtmSubmenuGrid">
+        <a href="#" class="DtmSubmenuLink">Bitexco</a>
+        <a href="#" class="DtmSubmenuLink">Saigon Centre</a>
+        <a href="#" class="DtmSubmenuLink">Landmark 81</a>
+        <a href="#" class="DtmSubmenuLink">Saigon One Tower</a>
+      </div>
+    </div>
+
+    <!-- ===================== -->
+    <!-- HẠNG -->
+    <!-- ===================== -->
+    <div class="DtmSubmenu-Rank">
+      <div class="DtmSubmenu-Title">
+        <div class="DtmSubmenuTitle-Link DtmSubmenuTitle-LinkBold">Tìm theo loại</div>
+      </div>
+      <div class="DtmSubmenuGrid">
+        <a href="#" class="DtmSubmenuLink">Hạng A</a>
+        <a href="#" class="DtmSubmenuLink">Hạng B</a>
+        <a href="#" class="DtmSubmenuLink">Hạng C</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="./dist/bundle.min.js"></script>
+</body>
+</html>
