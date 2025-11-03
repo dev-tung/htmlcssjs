@@ -1,17 +1,23 @@
-// ========================
-// VARIABLES
-// ========================
-$background-color: #f8f9fa;
-$background-hover-color: #e9ecef;
-$background-active-color: #ced4da;
+// Desktop
+$dt-mn-w: 769px;
 
-$border-color: #dee2e6;
+$cl-tx-1: #000000;
+$cl-tx-2: #1b1b1b;
+$cl-tx-3: #444444;
+$cl-tx-4: #858585;
+$cl-tx-h: #756c01;
+$cl-tx-a: #810101;
 
-$text-color-bold1: #000000;
-$text-color-bold2: #1b1b1b;
-$text-color-bold3: #444444;
-$text-color-bold4: #858585;
+$cl-bg-1: #f8f9fa;
+$cl-bg-h: #e9ecef;
+$cl-bg-a: #ced4da;
 
-$text-hover-color: #756c01;
-$text-active-color: #810101;
+$cl-bd-1: #dee2e6;
 
+
+// Mobile
+$mb-mx-w: 768px; 
+$mb-fs-1: 16px;
+$mb-fs-2: 14px;
+$mb-fs-3: 12px;
+$mb-fs-4: 10px;

@@ -3,7 +3,7 @@
 // // ========================
 // // DESKTOP (>=769px)
 // // ========================
-// @media (min-width: 769px) {
+// @media (min-width: $dt-mn-w) {
 //   .DtmSubmenu {
 //     display: none;
 //   }
@@ -15,7 +15,7 @@
 //     margin: 0 auto;
 //     padding: 30px;
 //     background-color: $bg-white;
-//     border: 1px solid $border-color;
+//     border: 1px solid $cl-bd-1;
 //     border-radius: 5px;
 //     column-gap: 20px;
 //     box-shadow: 0 16px 32px rgba(34, 37, 49, 0.24);
@@ -25,7 +25,7 @@
 //       display: flex;
 //       gap: 41px;
 //       padding-bottom: 20px;
-//       border-bottom: 1px solid $border-color;
+//       border-bottom: 1px solid $cl-bd-1;
 //       font-size: 16px;
 //     }
 
@@ -41,7 +41,7 @@
 //       }
 
 //       &Separate {
-//         border-right: 1px solid $border-color;
+//         border-right: 1px solid $cl-bd-1;
 //         padding-right: 41px;
 //       }
 //     }
@@ -78,7 +78,7 @@
 
 //     .DtToggleMenu {
 //       overflow-y: auto;
-//       border-right: 1px solid $border-color;
+//       border-right: 1px solid $cl-bd-1;
 
 //       &::-webkit-scrollbar {
 //         width: 3px;
