@@ -2,42 +2,67 @@
 // MOBILE (<769px)
 // ========================
 @media (max-width: 768px) {
+  $mobile-fs-1: 16px;
+  $mobile-fs-2: 14px;
+  $mobile-fs-3: 12px;
+  $mobile-fs-4: 10px;
+
   .DtSubmenu {
     display: none;
   }
 
-
   .DtmSubmenu {
     width: 100%;
-    background-color: $bg-white;
+    background-color: $background-color;
     border: 1px solid $border-color;
     border-radius: 5px;
     padding: 20px;
     box-shadow: 0 8px 16px rgba(34, 37, 49, 0.12);
 
+    &-Text1{
+      font-size: $mobile-fs-1;
+      color: $text-color-bold1;
+      font-weight: bold;
+      padding: 10px 0;
+    }
+
+    &-Text2{
+      font-size: $mobile-fs-2;
+      color: $text-color-bold2;
+      padding: 8px 0;
+    }
+
+    &-Text3{
+      font-size: $mobile-fs-3;
+      color: $text-color-bold3;
+      padding: 6px 0;
+    }
+
+    &-Text4{
+      font-size: $mobile-fs-4;
+      color: $text-color-bold4;
+      padding: 4px 0;
+    }
+
     // Title
     &-Title {
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
-      padding-bottom: 15px;
-      border-bottom: 1px solid $border-color;
+      gap: 10px;
+      padding: 10px 0;
     }
 
     .DtmSubmenuTitle-Link {
       cursor: pointer;
-      color: $text-color;
       text-decoration: none;
 
-      &Bold,
-      &Active {
-        color: #000;
-        font-weight: 600;
+      &Active{
+        color: $text-active-color;
       }
 
       &Separate {
         border-right: 1px solid $border-color;
-        padding-right: 20px;
+        padding-right: 10px;
       }
     }
 
@@ -54,12 +79,10 @@
     }
 
     .DtmSubmenuLink {
-      font-size: 13px;
-      color: $text-muted;
       text-decoration: none;
 
       &:hover {
-        color: $text-color;
+        color: $text-hover-color;
       }
     }
 
@@ -81,11 +104,11 @@
       }
 
       &::-webkit-scrollbar-thumb {
-        background-color: #888;
+        background-color: $background-color;
         border-radius: 10px;
 
         &:hover {
-          background-color: #666;
+          background-color: $background-hover-color;
         }
       }
 
@@ -96,8 +119,7 @@
         transition: all 0.2s ease;
 
         &.DtmToggleMenu-Active {
-          font-weight: 600;
-          background-color: #cccccc63;
+          background-color: $background-active-color;
         }
       }
     }
@@ -127,18 +149,16 @@
     }
 
     .DtmToggleContentList-Title {
-      font-weight: 600;
       margin-bottom: 20px;
     }
 
     .DtmToggleContent-Link {
       display: block;
       margin-bottom: 20px;
-      color: $text-muted;
       text-decoration: none;
 
       &:hover {
-        color: $text-color;
+        color: $text-hover-color;
       }
     }
 
@@ -146,14 +166,12 @@
       .DtmAccordion {
         display: flex;
         flex-direction: column;
-        row-gap: 10px;
 
         .DtmAccordion-Item {
-          border-top: 1px solid $border-color;
+          border-bottom: 1px solid $border-color;
 
           .DtmAccordion-Header {
             cursor: pointer;
-            font-weight: 600;
             padding: 10px 0;
             position: relative;
 
@@ -190,15 +208,19 @@
 
 
     .DtmToggleButton-Active{
-      color: black;
-      font-weight: 600;
+      color: $text-active-color;
     }
 
+    &-Highlight{
+      border-bottom: 1px solid $border-color;
+      padding-bottom: 10px;
+    }
 
+    .DtmSubmenuGrid{
+      display: flex;
+      flex-direction: column;
+    }
   }
-
-
-
 
 }
 // End
