@@ -17,7 +17,7 @@
     background-color: $cl-bg-1;
     border: 1px solid $cl-bd-1;
     border-radius: 5px;
-    column-gap: 20px;
+    column-gap: 30px;
     box-shadow: 0 16px 32px rgba(34, 37, 49, 0.24);
 
     &-Text1{
@@ -86,7 +86,7 @@
     // Toggle
     .DtToggleLayout {
       display: grid;
-      grid-template-columns: 150px 1fr;
+      grid-template-columns: 173px 1fr;
       gap: 20px;
       padding-top: 15px;
     }
@@ -140,7 +140,7 @@
         &Active {
           display: grid;
           grid-template-columns: 2fr 2fr;
-          gap: 60px;
+          gap: 30px;
         }
       }
     }
