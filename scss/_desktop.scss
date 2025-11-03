@@ -1,150 +1,177 @@
 
 
-// // ========================
-// // DESKTOP (>=769px)
-// // ========================
-// @media (min-width: $dt-mn-w) {
-//   .DtmSubmenu {
-//     display: none;
-//   }
+// ========================
+// DESKTOP (>=769px)
+// ========================
+@media (min-width: 769px) {
+  .DtmSubmenu {
+    display: none;
+  }
 
-//   .DtSubmenu {
-//     display: grid;
-//     grid-template-columns: 4fr 1fr 1fr;
-//     width: 1100px;
-//     margin: 0 auto;
-//     padding: 30px;
-//     background-color: $bg-white;
-//     border: 1px solid $cl-bd-1;
-//     border-radius: 5px;
-//     column-gap: 20px;
-//     box-shadow: 0 16px 32px rgba(34, 37, 49, 0.24);
+  .DtSubmenu {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    width: 1100px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: $cl-bg-1;
+    border: 1px solid $cl-bd-1;
+    border-radius: 5px;
+    column-gap: 20px;
+    box-shadow: 0 16px 32px rgba(34, 37, 49, 0.24);
 
-//     // Title
-//     &-Title {
-//       display: flex;
-//       gap: 41px;
-//       padding-bottom: 20px;
-//       border-bottom: 1px solid $cl-bd-1;
-//       font-size: 16px;
-//     }
+    &-Text1{
+      font-size: $dt-fs-1;
+      color: $cl-tx-1;
+      font-weight: bold;
+      padding: 10px 0;
+    }
 
-//     .DtSubmenuTitle-Link {
-//       cursor: pointer;
-//       color: $text-color;
-//       text-decoration: none;
+    &-Text2{
+      font-size: $dt-fs-2;
+      color: $cl-tx-2;
+      padding: 8px 0;
+    }
 
-//       &Bold,
-//       &Active {
-//         color: #000;
-//         font-weight: 600;
-//       }
+    &-Text3{
+      font-size: $dt-fs-3;
+      color: $cl-tx-3;
+      padding: 6px 0;
+    }
 
-//       &Separate {
-//         border-right: 1px solid $cl-bd-1;
-//         padding-right: 41px;
-//       }
-//     }
+    &-Text4{
+      font-size: $dt-fs-4;
+      color: $cl-tx-4;
+      padding: 4px 0;
+    }
 
-//     // Grid
-//     &-Grid {
-//       display: grid;
-//       padding-top: 20px;
-//       column-gap: 20px;
-//       row-gap: 20px;
+    // Title
+    &-Title {
+      display: flex;
+      gap: 41px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid $cl-bd-1;
+    }
 
-//       &-Three {
-//         grid-template-columns: 1fr 1fr 1fr;
-//       }
-//     }
+    .DtSubmenuTitle-Link {
+      cursor: pointer;
+      text-decoration: none;
 
-//     .DtSubmenuLink {
-//       font-size: 14px;
-//       color: $text-muted;
-//       text-decoration: none;
+      &Separate {
+        border-right: 1px solid $cl-bd-1;
+        padding-right: 41px;
+      }
+    }
 
-//       &:hover {
-//         color: $text-color;
-//       }
-//     }
+    // Grid
+    &-Grid {
+      display: grid;
+      padding-top: 20px;
+      column-gap: 20px;
+      row-gap: 20px;
 
-//     // Toggle
-//     .DtToggleLayout {
-//       display: grid;
-//       grid-template-columns: 150px 1fr;
-//       gap: 20px;
-//       padding-top: 15px;
-//     }
+      &-Three {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
 
-//     .DtToggleMenu {
-//       overflow-y: auto;
-//       border-right: 1px solid $cl-bd-1;
+    .DtSubmenuLink {
+      text-decoration: none;
 
-//       &::-webkit-scrollbar {
-//         width: 3px;
-//         border-radius: 5px;
-//       }
+      &:hover {
+        color: $cl-tx-h;
+      }
+    }
 
-//       &::-webkit-scrollbar-thumb {
-//         background-color: #888;
-//         border-radius: 10px;
+    // Toggle
+    .DtToggleLayout {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 20px;
+      padding-top: 15px;
+    }
 
-//         &:hover {
-//           background-color: #666;
-//         }
-//       }
+    .DtToggleMenu {
+      overflow-y: auto;
+      border-right: 1px solid $cl-bd-1;
 
-//       &-Item {
-//         cursor: pointer;
-//         padding: 8px;
-//         border-right: 3px solid transparent;
-//         transition: all 0.2s ease;
+      &::-webkit-scrollbar {
+        width: 3px;
+        border-radius: 5px;
+      }
 
-//         &.DtToggleMenu-Active {
-//           font-weight: 600;
-//           background-color: #cccccc63;
-//         }
-//       }
-//     }
+      &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
 
-//     // Toggle content
-//     .DtToggleContent {
-//       display: none;
-//       opacity: 0;
-//       visibility: hidden;
-//       transition: all 0.3s ease;
+        &:hover {
+          background-color: $cl-bg-h;
+        }
+      }
 
-//       &-Active {
-//         display: block;
-//         opacity: 1;
-//         visibility: visible;
-//       }
+      &-Item {
+        cursor: pointer;
+        padding: 8px;
+        border-right: 3px solid transparent;
+        transition: all 0.2s ease;
 
-//       &-Item {
-//         display: none;
+        &.DtToggleMenu-Active {
+          background-color: $cl-bg-a;
+          color: $cl-tx-a;
+        }
+      }
+    }
 
-//         &Active {
-//           display: grid;
-//           grid-template-columns: 2fr 2fr;
-//           gap: 60px;
-//         }
-//       }
-//     }
+    // Toggle content
+    .DtToggleContent {
+      display: none;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
 
-//     .DtToggleContentList-Title {
-//       font-weight: 600;
-//       margin-bottom: 25px;
-//     }
+      &-Active {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+      }
 
-//     .DtToggleContent-Link {
-//       display: block;
-//       margin-bottom: 25px;
-//       color: $text-muted;
-//       text-decoration: none;
+      &-Item {
+        display: none;
 
-//       &:hover {
-//         color: $text-color;
-//       }
-//     }
-//   }
-// }
+        &Active {
+          display: grid;
+          grid-template-columns: 2fr 2fr;
+          gap: 60px;
+        }
+      }
+    }
+
+    .DtToggleContentList-Title {
+      margin-bottom: 25px;
+    }
+
+    .DtToggleContent-Link {
+      display: block;
+      margin-bottom: 25px;
+      text-decoration: none;
+
+      &:hover {
+        color: $cl-tx-h;
+      }
+    }
+
+    .DtToggleButton-Active{
+      color: $cl-tx-a;
+    }
+
+    .DtSubmenuGrid{
+      display: grid;
+    }
+
+    .DtSubmenuGrid-Three{
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+    }
+
+    
+  }
+}
