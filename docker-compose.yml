@@ -10,7 +10,7 @@ services:
       - SHELL=/bin/sh
     command: >
       sh -c "
-        npm install -g npm-run-all chokidar-cli &&
+        npm install -g sass terser npm-run-all chokidar-cli &&
         npm install &&
         mkdir -p dist &&
         npm run build &&

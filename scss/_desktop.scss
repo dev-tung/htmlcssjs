@@ -4,8 +4,13 @@
 // DESKTOP (>=769px)
 // ========================
 @media (min-width: 769px) {
+
   .DtmSubmenu {
     display: none;
+  }
+
+  #masthead ul.header-nav>li.menu-item>.sub-menu:has(.DtmSubmenu){
+      background-color: unset;
   }
 
   .DtSubmenu {
@@ -24,31 +29,46 @@
       font-size: $dt-fs-1;
       color: $cl-tx-1;
       font-weight: bold;
-      padding: 10px 0;
+      padding: 15px 0;
     }
 
     &-Text2{
       font-size: $dt-fs-2;
       color: $cl-tx-2;
-      padding: 8px 0;
+      padding: 15px 0;
     }
 
     &-Text3{
       font-size: $dt-fs-3;
       color: $cl-tx-3;
-      padding: 6px 0;
+      padding: 15px 0;
     }
 
     &-Text4{
       font-size: $dt-fs-4;
       color: $cl-tx-4;
-      padding: 4px 0;
+      padding: 15px 0;
+    }
+
+    &-MarginLeft1{
+      margin-left: $dt-sz-1;
+    }
+
+    &-MarginLeft2{
+      margin-left: $dt-sz-2;
+    }
+
+    &-MarginLeft3{
+      margin-left: $dt-sz-3;
+    }
+    
+    &-MarginLeft4{
+      margin-left: $dt-sz-4;
     }
 
     // Title
     &-Title {
       display: flex;
-      gap: 41px;
       padding-bottom: 20px;
       border-bottom: 1px solid $cl-bd-1;
     }
@@ -59,7 +79,7 @@
 
       &Separate {
         border-right: 1px solid $cl-bd-1;
-        padding-right: 41px;
+        width: 150px;
       }
     }
 
@@ -86,31 +106,29 @@
     // Toggle
     .DtToggleLayout {
       display: grid;
-      grid-template-columns: 173px 1fr;
-      gap: 20px;
-      padding-top: 15px;
+      grid-template-columns: 150px auto;
+      gap: $dt-sz-2;
     }
 
     .DtToggleMenu {
+      height: 300px;
       overflow-y: auto;
       border-right: 1px solid $cl-bd-1;
 
       &::-webkit-scrollbar {
         width: 3px;
         border-radius: 5px;
+        background-color: $cl-bg-1;
       }
 
       &::-webkit-scrollbar-thumb {
         border-radius: 10px;
-
-        &:hover {
-          background-color: $cl-bg-h;
-        }
+        background-color: $cl-bg-h;
       }
 
       &-Item {
         cursor: pointer;
-        padding: 8px;
+        padding: 15px 10px;
         border-right: 3px solid transparent;
         transition: all 0.2s ease;
 
@@ -145,13 +163,8 @@
       }
     }
 
-    .DtToggleContentList-Title {
-      margin-bottom: 25px;
-    }
-
     .DtToggleContent-Link {
       display: block;
-      margin-bottom: 25px;
       text-decoration: none;
 
       &:hover {
@@ -167,9 +180,14 @@
       display: grid;
     }
 
+    .DtSubmenuGrid-Two{
+      grid-template-columns: 1fr 1fr;
+      column-gap: 15px;
+    }
+
     .DtSubmenuGrid-Three{
       grid-template-columns: 1fr 1fr 1fr;
-      gap: 20px;
+      column-gap: 15px;
     }
 
     

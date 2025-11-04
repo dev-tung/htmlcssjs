@@ -1,9 +1,21 @@
 // Desktop
 $dt-mn-w: 769px;
-$dt-fs-1: 20px;
-$dt-fs-2: 18px;
-$dt-fs-3: 16px;
-$dt-fs-4: 14px;
+$dt-fs-1: 18px;
+$dt-fs-2: $dt-fs-1 - 2px;
+$dt-fs-3: $dt-fs-2 - 2px;
+$dt-fs-4: $dt-fs-3 - 2px;
+
+$dt-sz-1: 15px;
+$dt-sz-2: $dt-sz-1 * 2;
+$dt-sz-3: $dt-sz-2 * 2;
+$dt-sz-4: $dt-sz-3 * 2;
+
+// Mobile
+$mb-mx-w: 768px; 
+$mb-fs-1: 16px;
+$mb-fs-2: $mb-fs-1 - 2px;
+$mb-fs-3: $mb-fs-2 - 2px;
+$mb-fs-4: $mb-fs-3 - 2px;
 
 $cl-tx-1: #000000;
 $cl-tx-2: #1b1b1b;
@@ -11,17 +23,8 @@ $cl-tx-3: #444444;
 $cl-tx-4: #858585;
 $cl-tx-h: #756c01;
 $cl-tx-a: #810101;
-
 $cl-bg-1: #f8f9fa;
-$cl-bg-h: #e9ecef;
+$cl-bg-h: #a2a4a5;
 $cl-bg-a: #ced4da;
-
 $cl-bd-1: #dee2e6;
 
-
-// Mobile
-$mb-mx-w: 768px; 
-$mb-fs-1: 16px;
-$mb-fs-2: 14px;
-$mb-fs-3: 12px;
-$mb-fs-4: 10px;
